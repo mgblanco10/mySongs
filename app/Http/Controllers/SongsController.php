@@ -69,7 +69,6 @@ class SongsController extends Controller
         // dd($request->all());
         $song->update($request->all());
         return redirect()->route('songs.index')->with('success', 'Canción favorita actualizada exitosamente!');
-
     }
 
     /**
