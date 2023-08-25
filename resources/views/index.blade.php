@@ -38,7 +38,6 @@
                 <td>{{ \Carbon\Carbon::parse($song->due_date)->format('d-m-Y') }}</td>
                 <td>
                     <a href="{{ route('songs.edit', $song->id) }}" class="btn btn-warning">Editar</a>
-
                     <form action="{{route('songs.destroy', $song)}}" method="POST" class="d-inline">
                         @csrf 
                         @method('DELETE')
